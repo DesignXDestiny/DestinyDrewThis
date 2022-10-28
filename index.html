@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Destiny Drew This</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="basicstyle.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Euphoria+Script&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,300&family=Oleo+Script+Swash+Caps&display=swap');
+        </style>
+
+        
+<script>
+     $(document).ready(function()
+      {
+        $('img').bind('contextmenu', function(e){
+          return false;
+        }); 
+    });
+</script>
+
+<script>
+  let allImages = document.querySelector("img");
+      allImages.forEach((value)=>{
+          value.oncontextmenu = ()=>{
+              return false;
+          }
+      })
+</script>
+        
+        
+     </head>
+
+    
+<body id="chromeFix">
+ <div id="top">
+  <header>
+      <nav class="box">
+          <img src="asset/img/Monographddt.png">
+           <ul>
+            <a href="about.html"><li>About</li></a>        
+            <a href="contact.html"><li>Contact</li></a>
+          </ul> 
+          <!--
+           <input id="searchbar" onkeyup="search_art()" type="text"
+              name="search" 
+                  placeholder="Search Artwork by color, medium, subject, type . . . ">-->
+     </nav>
+     <section>
+     <h1>Destiny Drew This</h1>
+         <subhead>Now presenting my artwork for you to enjoy</subhead></section>
+         </header>
+
+    <aside>
+
+        <nav>        <h3>Page Jumps</h3>
+            <ul>
+                <li><a href="#us">Urban Sketches</a></li>
+                <li><a href="#ink">Inktober</a></li>
+             <li><a href="#obs">Observation</a></li>
+             <li><a href="#por">Portrait</a></li>
+                <li><a href="#fic">Fantasy</a>
+                <li><a href="#fan">Fan Art</a>
+             <li><a href="#col">College</a></li>
+                
+            </ul></nav>
+     </aside>
+                
+     <div id="artwork">
+                 <!-- 
+            <img src=""
+              alt=""> 
+
+         <figure><h4></h4><img src="" alt=""><figcaption></figcaption>          </figure>
+                -->   
+         
+     <section id="us">
+         <header>
+         <h2>Urban Sketches</h2>
+         <p>Sketched from direct observation of an urban, city, neighborhood, or other outdoor civilized setting.</p></header>
+        <figure class="artwork"> 
+            <h4>Pink Motel</h4>
+            <img src="https://preview.redd.it/ku3i0wl391q91.jpg?width=2963&format=pjpg&auto=webp&s=ca7b260943f50c9a4c730d6a0e4a02169500ce29"
+              alt="Urban sketch in pen / ink in my baronfig sketchbook. Black and white drawing stage. Landsacpe orientation, on one side of the notebook.">
+         <img src="https://preview.redd.it/h8extxl391q91.jpg?width=2963&format=pjpg&auto=webp&s=4ae0e1702908c76bae9eb0c5419c0918cc9a4b24"
+              alt="Urban sketch of the motel on Fremont street, Las Vegas, NV. street now colored in with sharpie. The actual motel is pink, so I colored it in as I observed it.">
+            <figcaption>A permanently closed Fremont motel.</figcaption></figure>
+         <figure class="artwork">
+             <h4>Blue Motel</h4>
+         <img src="https://preview.redd.it/cor5u9uf5vo91.jpg?width=2713&format=pjpg&auto=webp&s=f19bc585101cc9792f6e70a323bfa4924521c0ac"
+              alt="The subject of my drawing is the Travler's Motel fom Fremont street, Las Vegas, NV. Urban sketch in pen / ink in my baronfig sketchbook. Black and white drawing stage.">        
+         <img src="https://preview.redd.it/bufe2auf5vo91.jpg?width=2736&format=pjpg&auto=webp&s=bf879c80389f98b2601345d854ec05126ac947a8"
+              alt="Blue Motel">
+             <figcaption>Traveler's Motel <i>also permenantly closed</i></figcaption></figure>
+          <!-- <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div style="margin-bottom: 1.25rem;">
+          <p>Limited Edition Print signed by the Artist
+Full Colour
+Urban Sketch - Fremont St Blue Motel </p>
+        <select id="item-options"><option value="Postcard (small)" price="30">Postcard (small) - 30 USD</option><option value="Full Detail (medium)" price="50">Full Detail (medium) - 50 USD</option><option value="Poster (large)" price="120">Poster (large) - 120 USD</option></select>
+          <select style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
+        </div>
+      <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AdrKunoNkMTRvV9zdDpeQOcT4L_QwHWCovs6RVKLIUW-rztIswtMYU-C6tKm5lbFmcOC_IDsg6NLqS2P&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        var shipping = 0;
+        var itemOptions = document.querySelector("#smart-button-container #item-options");
+    var quantity = parseInt(10);
+    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+    if (!isNaN(quantity)) {
+      quantitySelect.style.visibility = "visible";
+    }
+    var orderDescription = 'Limited Edition Print signed by the Artist
+            Full Colour
+            Urban Sketch - Fremont St Blue Motel ';
+    if(orderDescription === '') {
+      orderDescription = 'Item';
+    }
+    paypal.Buttons({
+      style: {
+        shape: 'rect',
+        color: 'silver',
+        layout: 'horizontal',
+        label: 'paypal',
+        
+      },
+      createOrder: function(data, actions) {
+        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+        var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+        if(quantitySelect.options.length > 0) {
+          quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+        } else {
+          quantity = 1;
+        }
+
+        tax *= quantity;
+        tax = Math.round(tax * 100) / 100;
+        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+        priceTotal = Math.round(priceTotal * 100) / 100;
+        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+
+        return actions.order.create({
+          purchase_units: [{
+            description: orderDescription,
+            amount: {
+              currency_code: 'USD',
+              value: priceTotal,
+              breakdown: {
+                item_total: {
+                  currency_code: 'USD',
+                  value: itemTotalValue,
+                },
+                shipping: {
+                  currency_code: 'USD',
+                  value: shipping,
+                },
+                tax_total: {
+                  currency_code: 'USD',
+                  value: tax,
+                }
+              }
+            },
+            items: [{
+              name: selectedItemDescription,
+              unit_amount: {
+                currency_code: 'USD',
+                value: selectedItemPrice,
+              },
+              quantity: quantity
+            }]
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(orderData) {
+          
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+          // Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+          // Or go to another URL:  actions.redirect('thank_you.html');
+
+        });
+      },
+      onError: function(err) {
+        console.log(err);
+      },
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+    </script>-->
+        </section>
+     
+     <section id="ink">
+        <header> <h2>Inktober</h2>
+            <p><b>Inktober prompts</b> inspired the subject and medium for each of these drawings.</p></header>
+    <div class="box">
+         <figure class="artwork"><h4>Progress</h4>
+         <img src="https://i.redd.it/s590xfouais51.jpg"
+              alt="progress"><figcaption>A visual representation of progress.</figcaption></figure>
+         
+                <figure><h4>Spirit</h4><img src="asset/img/art/inked6-21.png" alt="inktober prompt number 6 Spirit pen and ink drawing of a horse in a valley, a place I hope a spirt can be free."><figcaption>2021 Prompt #6</figcaption> </figure>
+        </div>
+         
+     </section>
+     
+     <section id="obs">
+        <header> <h2>Observational</h2>
+         <p>These drawings are created by rendering objects (irl) that can be observed nearby.  Also known as <b>Still Life</b> drawings. This method is meditatetive to draw.</p></header>
+
+         <figure class="artwork"><h4>Breakfast Booth</h4>
+             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2635564a-54c9-4762-ad76-116e3c05b5bb/dadu6l5-b67d956f-43d2-447d-b50c-d53f39cb86f0.jpg/v1/fill/w_1024,h_648,q_75,strp/booth___65_by_destinypurry_dadu6l5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2MzU1NjRhLTU0YzktNDc2Mi1hZDc2LTExNmUzYzA1YjViYlwvZGFkdTZsNS1iNjdkOTU2Zi00M2QyLTQ0N2QtYjUwYy1kNTNmMzljYjg2ZjAuanBnIiwiaGVpZ2h0IjoiPD02NDgiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yNjM1NTY0YS01NGM5LTQ3NjItYWQ3Ni0xMTZlM2MwNWI1YmJcL2Rlc3RpbnlwdXJyeS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.jYPTaxj8nozQDrVw2Jr0fEQ7KvkNgfexjxLUO2cH7Bw"
+                          alt="IHOP on Craid Rd & Nellis Blvd booth #65"><figcaption>Booth #65</figcaption></figure>
+           
+     </section>
+         
+         
+       <section id="por">
+           <header> <h2>Portraiture</h2>
+           <p>Pets are great subjects for this practice.  They are have interesting shape, furry textures, and are adorable.</header>
+          <figure class="artwork"> <h4>Catcat Playing</h4>
+          <img src="https://i.redd.it/0njwmbzjihl91.jpg"
+               alt="Pencil drawing of my cat">
+              <figcaption>Pencil drawing of my cat</figcaption></figure>
+         </section>
+     
+     <section id="fic">
+         <header><h2>Fantasy</h2>
+         <p>The subject of these drawings were inspired by my imagination. I drew these without using a reference.</p></header>
+         
+         <figure class="artwork"><h4>Strawberry Man</h4>
+         <img src="StraberryManHead.jpg"
+              alt="Pen drawing of a strawberry with a man's face appearing on it."><figcaption>. . .fields forever. . .</figcaption></figure>
+         </section>
+         
+         <section id="fan">
+             <h2>Fan Art</h2>
+             <p>Characters or artists I admire enough to create or recreate art.</p>
+             
+             <figure class="artwork"><h4>Picachu</h4>
+               <img src="https://i.redd.it/or7ipnbxd0891.png"
+              alt="Pikachu"><figcaption>Event version from Pokemon Go.</figcaption></figure>
+     </section>
+     
+  <section id="col">
+    <header><h2>College Work</h2>
+         <p>Always been interested in art, so I took art classes in college. These were either assignments or created in the CSN studio environment.</p></header>
+         
+         <div class="box">
+         <figure class="artwork"><h4>Carravagio Copy</h4><img src="asset/img/art/carravagio.jpg" alt="Oil painting of hands"><figcaption>I used hands from one of Carravagio's masterpiece to paint my own.</figcaption></figure>
+
+
+
+         <figure class="artwork">
+             <h4>Frosty</h4><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2635564a-54c9-4762-ad76-116e3c05b5bb/dc81169-dfb2b66e-8380-426f-8ef7-10fecf617f79.jpg/v1/fill/w_1024,h_733,q_75,strp/p4grc103_frostycat_by_destinypurry_dc81169-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMzIiwicGF0aCI6IlwvZlwvMjYzNTU2NGEtNTRjOS00NzYyLWFkNzYtMTE2ZTNjMDViNWJiXC9kYzgxMTY5LWRmYjJiNjZlLTgzODAtNDI2Zi04ZWY3LTEwZmVjZjYxN2Y3OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.uLndui7bcgsqn0y3YjhMivAElRnkmOSU_0MHGJqxGhs"
+                                 alt="Frosty the Cat"><figcaption>I used to babysit this cat when I was in college and drew this picture of him in Adobe Illustrator.</figcaption></figure>
+
+
+         <figure class="artwork">  <h4>Two Hands</h4>
+             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2635564a-54c9-4762-ad76-116e3c05b5bb/dadu7cb-1be1e315-9cfc-436b-87c5-b8be5be8cdae.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2MzU1NjRhLTU0YzktNDc2Mi1hZDc2LTExNmUzYzA1YjViYlwvZGFkdTdjYi0xYmUxZTMxNS05Y2ZjLTQzNmItODdjNS1iOGJlNWJlOGNkYWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CbfzGnr5SjXsRyaYYqO3MeV4N75EpG18E7W1HJppniI"
+                  alt="Pencil drawing of two hands reaching towards the light in a cupping motion."><figcaption>all I need to do this</figcaption></figure>
+
+
+         <figure class="artwork"><h4>Features</h4>
+             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2635564a-54c9-4762-ad76-116e3c05b5bb/dabeghx-c187ef05-6a08-462d-b7ce-fb69b8864127.jpg/v1/fill/w_1024,h_576,q_75,strp/mouthy_by_destinypurry_dabeghx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2MzU1NjRhLTU0YzktNDc2Mi1hZDc2LTExNmUzYzA1YjViYlwvZGFiZWdoeC1jMTg3ZWYwNS02YTA4LTQ2MmQtYjdjZS1mYjY5Yjg4NjQxMjcuanBnIiwiaGVpZ2h0IjoiPD01NzYiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yNjM1NTY0YS01NGM5LTQ3NjItYWQ3Ni0xMTZlM2MwNWI1YmJcL2Rlc3RpbnlwdXJyeS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.vXm702iy6aAxr4D-I2cVQjoyp-FbXKhPrCtjoELE_HM"
+                  alt="Pencil drawing of a mouth and one nostril">
+             <figcaption>Lower face</figcaption></figure>
+
+         <figure class="artwork"> <h4>Swan</h4>
+             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2635564a-54c9-4762-ad76-116e3c05b5bb/daba9xo-bf3f03ce-ddbc-440e-8f48-894ee29719d4.jpg/v1/fill/w_943,h_697,q_75,strp/swan_by_destinypurry_daba9xo-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njk3IiwicGF0aCI6IlwvZlwvMjYzNTU2NGEtNTRjOS00NzYyLWFkNzYtMTE2ZTNjMDViNWJiXC9kYWJhOXhvLWJmM2YwM2NlLWRkYmMtNDQwZS04ZjQ4LTg5NGVlMjk3MTlkNC5qcGciLCJ3aWR0aCI6Ijw9OTQzIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hdZmyYvax7ZwQUGkLXDZVrfwO2RsIoDwhvMLXRVDbI8"
+                  alt="Charcoal Swan"><figcaption>Using the subtractive method to draw, with a kneeded eraser in a charcoal ground is relaxing and fun.</figcaption></figure>
+
+
+         <figure class="artwork"><h4>Algernon</h4>
+             <img src="https://raw.githubusercontent.com/DesignXDestiny/DesignXDestiny/master/Galleries/img/art/algernon.jpg" atl="Drawing of a white mouse on white paper with colored pencil. 3/4 view, whole body."><figcaption>Have you read <i>Flowers for Algernon</i>?</figcaption></figure>
+
+         <figure class="artwork"><h4>My Left</h4><img src="https://raw.githubusercontent.com/DesignXDestiny/DesignXDestiny/master/Galleries/img/art/hand.jpg" alt="Pencil drawing of my left hand on newsprint"><figcaption>Backhand</figcaption></figure>
+
+
+         
+         
+      </div>
+         
+     </section>
+         
+         
+     </div>     
+         
+         
+         
+         
+         
+<footer>
+        <nav>
+                  <!--   <h3>Search for your Art</h3>
+           <input id="searchbar" onkeyup="search_art()" type="text"
+              name="search" placeholder="Search Artwork for colors, mediums, subject, type . . . ">-->
+          <ul>
+              <li><a href="#top">Back to the top</a></li>
+          </ul>
+        </nav>
+        <section> <small>DestinyDrewThis &copy; 2022</small>  </section>
+</footer>
+</div>
+    
+
+  <script type="text/javascript">
+      var titles = [];
+      var titleInput = document.getElementById("title");
+      var messageBox = document.getElementById("display");
+      function Allow()
+      {
+      if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+      {
+      user.title.value="";
+      alert("Please Enter only alphabets");
+      }
+      window.location.reload()
+      }
+</script>
+
+  <script type="text/javascript">
+    // JavaScript code 
+function search_art() { 
+    let input = document.getElementById('searchbar').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('artwork'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+           x[i].style.display="block";                  
+         } 
+      } 
+   }
+  </script>
+ </body>
+ </html>
+
+
+
+
+
+
