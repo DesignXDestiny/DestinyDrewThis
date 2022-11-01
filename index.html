@@ -11,7 +11,7 @@
         </style>
 
         
-<script>
+<script type='text/javascript'>
      $(document).ready(function()
       {
         $('img').bind('contextmenu', function(e){
@@ -20,7 +20,7 @@
     });
 </script>
 
-<script>
+<script type='text/javascript'>
   let allImages = document.querySelector("img");
       allImages.forEach((value)=>{
           value.oncontextmenu = ()=>{
@@ -29,6 +29,16 @@
       })
 </script>
         
+  <script type='text/javascript'>
+    window.onAmazonLoginReady = function() {
+      amazon.Login.setClientId('CLIENT-ID');
+    };
+    window.onAmazonPaymentsReady = function() {
+                showButton();
+    };
+  </script>
+    <script async="async" src='https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js'>
+  </script>
         
      </head>
 
@@ -85,7 +95,28 @@
               alt="Urban sketch in pen / ink in my baronfig sketchbook. Black and white drawing stage. Landsacpe orientation, on one side of the notebook.">
          <img src="https://preview.redd.it/h8extxl391q91.jpg?width=2963&format=pjpg&auto=webp&s=4ae0e1702908c76bae9eb0c5419c0918cc9a4b24"
               alt="Urban sketch of the motel on Fremont street, Las Vegas, NV. street now colored in with sharpie. The actual motel is pink, so I colored it in as I observed it.">
-            <figcaption>A permanently closed Fremont motel.</figcaption></figure>
+            <figcaption>A permanently closed Fremont motel.</figcaption>
+            </figure>
+          <!--  <script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js"></script>
+<div
+    data-ap-widget-type="expressPaymentButton"
+    data-ap-signature="S7EzgWl%2BgVsSwX%2FmS8I9yMy9Yq4E7GwaXMs5pQV%2F4pM%3D"
+    data-ap-seller-id="A37F0Y0SVQWY00"
+    data-ap-access-key="AKIAJI3BXCXUX5WK7ACQ"
+    data-ap-lwa-client-id="amzn1.application-oa2-client.ddc4d3bee40b46fdb74a43e396d4cb25"
+    data-ap-return-url="https://www.destinydrewthis.art/contact"
+
+
+    data-ap-currency-code="USD"
+    data-ap-amount="50"
+    data-ap-note="Thank you for your purchase of a medium sized print of the pink motel on Fremont.  Let me know if you have any questions. I would love to see a photo of how you decide to display your new piece! feel free to send me one via email or dm. "
+    data-ap-shipping-address-required="true"
+    data-ap-payment-action="AuthorizeAndCapture"
+>
+</div>-->
+
+         
+         
          <figure class="artwork">
              <h4>Blue Motel</h4>
          <img src="https://preview.redd.it/cor5u9uf5vo91.jpg?width=2713&format=pjpg&auto=webp&s=f19bc585101cc9792f6e70a323bfa4924521c0ac"
@@ -93,7 +124,8 @@
          <img src="https://preview.redd.it/bufe2auf5vo91.jpg?width=2736&format=pjpg&auto=webp&s=bf879c80389f98b2601345d854ec05126ac947a8"
               alt="Blue Motel">
              <figcaption>Traveler's Motel <i>also permenantly closed</i></figcaption></figure>
-           <div id="smart-button-container">
+         
+          <!-- <div id="smart-button-container">
       <div style="text-align: center;">
         <div style="margin-bottom: 1.25rem;">
           <p>Limited Edition Print signed by the Artist
@@ -198,7 +230,7 @@ Urban Sketch - Fremont St Blue Motel </p>
     }).render('#paypal-button-container');
   }
   initPayPalButton();
-    </script>
+    </script>-->
         </section>
      
      <section id="ink">
@@ -285,19 +317,12 @@ Urban Sketch - Fremont St Blue Motel </p>
              <img src="https://raw.githubusercontent.com/DesignXDestiny/DesignXDestiny/master/Galleries/img/art/algernon.jpg" atl="Drawing of a white mouse on white paper with colored pencil. 3/4 view, whole body."><figcaption>Have you read <i>Flowers for Algernon</i>?</figcaption></figure>
 
          <figure class="artwork"><h4>My Left</h4><img src="https://raw.githubusercontent.com/DesignXDestiny/DesignXDestiny/master/Galleries/img/art/hand.jpg" alt="Pencil drawing of my left hand on newsprint"><figcaption>Backhand</figcaption></figure>
-
-
          
          
-      </div>
-         
-     </section>
-         
-         
-     </div>     
-         
-         
-         
+      </div>         
+     </section>         
+        
+     </div>           
          
          
 <footer>
@@ -310,6 +335,39 @@ Urban Sketch - Fremont St Blue Motel </p>
           </ul>
         </nav>
         <section> <small>DestinyDrewThis &copy; 2022</small>  </section>
+    
+    <hr>
+    <h4>Test</h4>
+    <p>Come back later, don't bother with this button right now</p>
+    
+    
+    
+    <script async src="https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js"></script>
+<div
+    data-ap-widget-type="expressPaymentButton"
+    data-ap-signature="3rzwK3GPVZHLQyH8mqf5KI1J1Zaozg6ikSJx8hqT%2F5s%3D"
+    data-ap-seller-id="A37F0Y0SVQWY00"
+    data-ap-access-key="AKIAJI3BXCXUX5WK7ACQ"
+    data-ap-lwa-client-id="amzn1.application-oa2-client.ddc4d3bee40b46fdb74a43e396d4cb25"
+    data-ap-return-url="https://www.destinydrewthis.art/contact"
+
+        data-ap-cancel-return-url="https://www.destinydrewthis.art/contact"
+
+    data-ap-currency-code="USD"
+    data-ap-amount="50"
+    data-ap-note="This artwork will soon be in your hands!  Thank you sincerely, feel free to contact me if you have any questions or special requests. "
+    data-ap-shipping-address-required="true"
+    data-ap-payment-action="AuthorizeAndCapture"
+>
+</div>
+
+    <hr><p>old</p>
+     <div id="AmazonPayButton">
+ </div>
+    
+    
+
+    
 </footer>
 </div>
     
@@ -355,8 +413,57 @@ function search_art() {
 
   gtag('config', 'G-B8X9RFPEK1');
 </script>
+    
+     <script type="text/javascript">
+    function showButton(){
+      var authRequest; 
+      OffAmazonPayments.Button("AmazonPayButton", "SELLER-ID", { 
+        type:  "TYPE", 
+        color: "COLOR", 
+        size:  "SIZE", 
+
+        authorization: function() { 
+        loginOptions = {scope: "SCOPES", 
+          popup: "POPUP-PARAMETER"}; 
+        authRequest = amazon.Login.authorize (loginOptions, 
+          "REDIRECT-URL"); 
+        }, 
+ 
+        onError: function(error) { 
+          // your error handling code.
+          // alert("The following error occurred: " 
+          //        + error.getErrorCode() 
+          //        + ' - ' + error.getErrorMessage());
+        } 
+     });
+    }; 
+   </script>
+   
+   <script type="text/javascript">
+     document.getElementById('Logout').onclick = function() {
+       amazon.Login.logout();
+     };
+   </script>
  </body>
- </html>
+     </html>
+
+    <?php namespace PayWithAmazon;
+
+$config = array('merchant_id'   => 'A37F0Y0SVQWY00',
+  'access_key'   => 'AKIAJI3BXCXUX5WK7ACQ',
+  'secret_key'   => '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',
+  'client_id'   => 'amzn1.application-oa2-client.ddc4d3bee40b46fdb74a43e396d4cb25',
+  'region'   => 'REGION',
+  'sandbox'   => true
+);
+
+$client = new Client($config);
+
+// Also you can set the sandbox variable in the config() array of the Client class by
+
+$client->setSandbox(true);
+?>
+
 
 
 
