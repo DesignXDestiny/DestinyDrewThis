@@ -1,0 +1,21 @@
+ 
+ #usbm {
+    background-image: url("https://preview.redd.it/bufe2auf5vo91.jpg?width=2736&format=pjpg&auto=webp&s=bf879c80389f98b2601345d854ec05126ac947a8");
+    background-repeat: no-repeat;
+    background-size: contain;
+     min-height: 70vh;
+     display: block;
+     z-index: -1;
+     align-self: center;
+     
+ }
+
+#uspm {
+        background-image: url("https://preview.redd.it/h8extxl391q91.jpg?width=2963&format=pjpg&auto=webp&s=4ae0e1702908c76bae9eb0c5419c0918cc9a4b24");
+     background-repeat: no-repeat;
+}
+
+#usmb {
+    background-image: url("");
+     background-repeat: no-repeat;
+}
