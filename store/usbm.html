@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Destiny Drew This</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../basicstyle.css">
+        <link rel="stylesheet" href="../art.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Euphoria+Script&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,300&family=Oleo+Script+Swash+Caps&display=swap');
+        </style>
+        
+     </head>
+    
+<body id="chromeFix">
+ <div id="top">
+  <header>
+      <nav class="box">
+          <img src="../asset/img/Monographddt.png" alt="logo">
+           <ul>
+            <a href="../index.html"><li>Home</li></a> 
+            <a href="../about.html"><li>About</li></a>        
+            <a href="../contact.html"><li>Contact</li></a>
+          </ul> 
+          <!--
+           <input id="searchbar" onkeyup="search_art()" type="text"
+              name="search" 
+                  placeholder="Search Artwork by color, medium, subject, type . . . ">-->
+     </nav>
+      
+  <section><h1>Destiny Drew This</h1>
+     <subhead>Now presenting my Artwork 
+      </subhead></section>
+  </header>
+
+     
+<section>
+    <h2>Urban Sketch</h2>
+       <p>Sketched from direct observation of an urban, city, neighborhood, or other outdoor civilized setting. This is my most journalistic series.</p>
+    <!--
+            <a href="" target="_blank"></a>
+            <img src="qrcodes/"
+                 alt="qr code to buy printed artwork">
+-->
+    
+    
+    
+        <article>
+            <h3>Blue Motel</h3>      
+            
+             <p>
+                I drew this from inside this cafe with large windows. This old abandoned motel is on Fremont Street, Las Vegas, Nevada.  It has bold color contrast ans is a plesant view from <i>Public Us</i>. 
+                </p>
+            
+                     <figure class="artwork">
+                         <h4>Line Art</h4>
+         <img src="https://preview.redd.it/cor5u9uf5vo91.jpg?width=2713&format=pjpg&auto=webp&s=f19bc585101cc9792f6e70a323bfa4924521c0ac"
+              alt="The subject of my drawing is the Travler's Motel fom Fremont street, Las Vegas, NV. Urban sketch in pen / ink in my baronfig sketchbook. Black and white drawing stage.">
+                         <figcaption> Black and white drawing stage.</figcaption>   </figure>
+            
+             <p>I drew this with a black, ballpoint pen in my baronfig sketchbook. 
+                Then I went over that drawing with Sharpie fine point permenant markers.                
+                </p>
+            
+            <figure>     
+               <h4>Full Color</h4>
+                <img src="https://preview.redd.it/bufe2auf5vo91.jpg?width=2736&format=pjpg&auto=webp&s=bf879c80389f98b2601345d854ec05126ac947a8"
+              alt="Blue Motel">
+             <figcaption>Colored as closely to life as possible with my avalible pallate of 13 markers.</figcaption>  </figure>
+            
+           
+
+           
+            
+            <p>
+                Portrait orientation
+            </p>            
+            
+    </article>
+    <footer>
+        <h4>Purchase a Print</h4>
+        <p>There are three different sizes for you to choose from</p>
+            
+        <ul class="box">
+            
+            <li>Large
+              <ul>
+                <li><a href="https://buy.stripe.com/4gwdU010X9BhbOofZ0" target="_blank">Link to Purchase</a></li>
+                <li><a href="qrcodes/qr_large_usbm.png" target="_blank">
+               QR code to buy printed artwork</a></li>
+              </ul>
+            </li>
+            
+          <li>Medium
+              <ul>     
+                <li><a href="https://buy.stripe.com/dR6bLS2514gXbOo6oo" target="_blank">Link to Purchase</a></li>
+                 <li><a href="qrcodes/qr_medium_usbm.png" target="_blank">QR code to buy printed artwork</a></li>
+              </ul>
+            </li>
+        
+      <li>Small / Postcard 
+          <ul>
+            <li> <a href="https://buy.stripe.com/28odU0cJFdRx5q0289" target="_blank">Link to Purchase</a></li>
+            <li><a href="qrcodes/qr_small_usbm.png" target="_blank">QR code to buy printed artwork</a></li>
+           </ul>
+        </li>
+     
+    </ul>
+     
+    
+     </footer>
+        <!--<figure><h4></h4><a href=""><img src=""></a></figure>-->
+         </section> 
+    
+    </div>         
+                  
+<footer>
+        <nav>
+                  <!--   <h3>Search for your Art</h3>
+           <input id="searchbar" onkeyup="search_art()" type="text"
+              name="search" placeholder="Search Artwork for colors, mediums, subject, type . . . ">-->
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+          </ul>
+        </nav>
+    
+        <section> <small>DestinyDrewThis &copy; 2022</small>  </section>
+    
+     </footer>
+ </body>
+     </html>
+<script>
+document.querySelectorAll(".load-image").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const href = event.target.getAttribute("href");
+    const newImage = document.createElement("img");
+    event.preventDefault();
+    newImage.setAttribute("src", href);
+    document.body.insertBefore(newImage, event.target);
+    event.target.remove();
+  });
+});
+</script>
