@@ -23,7 +23,12 @@ font-family: 'Oleo Script Swash Caps', cursive; */
 fum rgb(37, 34, 202)
 sienna rgb(160,82,45)
 */
-
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .box {
   display: flex;
@@ -80,7 +85,7 @@ sienna rgb(160,82,45)
         min-width: 200px;
         line-height: 1.5em;
         margin: auto;
-        padding: 1%;
+        padding: 2%;
         text-align: left;
     }
     figure 
