@@ -11,13 +11,28 @@
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Euphoria+Script&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,300&family=Oleo+Script+Swash+Caps&display=swap');
     </style>
+            <script>
+            
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+        </script>
           
 </head>
    
 <body>
      
   <header>
-      <nav>
+      <nav id="navbar">
           <img src="asset/img/Monographddt.png" alt="DestinyDrewThis">
            <ul class="box">
             <li><a href="asset/about.html">About </a></li>        
@@ -30,7 +45,10 @@
      </nav>
    <section>
      <h1>Destiny Drew This</h1>
-         <subhead>Now presenting my artwork for you to enjoy</subhead>          </section>
+         <subhead>Now presenting my artwork for you to enjoy</subhead> 
+      
+     <p> My different series of artwork have their own pages with the creative process, materials used, and available limited edition prints for you to check out by following the links in the descriptions.</p>
+      </section>
  </header>
 
  <!--<aside>
@@ -60,7 +78,10 @@
      <section id="us">
          <header>
          <h2>Urban Sketches</h2>
-         <p><a href="urbansketch/index.html">Sketched from direct observation of an urban, city, neighborhood, or other outdoor civilized setting.</a></p></header>
+             
+         <p><a href="urbansketch/index.html">Sketched from direct observation of an urban, city, neighborhood, or other outdoor civilized setting.</a>
+             </p>
+         </header>
          
         <figure class="artwork"> 
             <h4><a href="urbansketch/pinkmotel.html">Pink Motel</a></h4>
@@ -88,16 +109,76 @@
      
      <section id="ink">
         <header> <h2>Inktober</h2>
-            <p><a href="inktober/index.html"><b>Inktober prompts</b> inspired the subject and medium for each of these drawings.</a></p></header>
+            <p><a href="inktober/index.html">Inktober inspired the
+ subject (prompt),  and medium (ink)
+ for these drawings.</a></p></header>
          
-    <div class="box">
+        <div class="box">    
+         
+        <article>
+            <h5>2022</h5><div class="box">
+                <figure><h4>Gargoyle</h4>
+                    <img src="asset/img/art/ink22-1fin.JPEG"
+                         alt="gargoyle drawing">
+                    <figcaption>1</figcaption>
+                        </figure>
+                
+                 <figure><h4>Scurry</h4>
+                    <img src="asset/img/art/ink22-2fin.JPG"
+                         alt="cat + 2 mice drawing">
+                    <figcaption>2</figcaption>
+                        </figure>
+                
+                 <figure><h4>Bat</h4>
+                    <img src="asset/img/art/ink22-3b.jpg"
+                         alt="bat drawing">
+                    <figcaption>3</figcaption>
+                        </figure>
+                
+                 <figure><h4>Shell</h4>
+                    <img src="asset/img/art/ink22-4b.JPEG"
+                         alt="shell + octopus drawing">
+                    <figcaption>4</figcaption>
+                        </figure>
+            
+             <figure><h4>Flame</h4>
+                    <img src="asset/img/art/ink22-5b.JPEG"
+                         alt="hocus pocus black flame candle drawing">
+                    <figcaption>5</figcaption>
+                        </figure>
+            
+             <figure><h4>Boquet</h4>
+                    <img src="asset/img/art/ink22-6b.jpg"
+                         alt="bouquet of skulls drawing">
+                    <figcaption>6</figcaption>
+                        </figure>
+            
+             <figure><h4>Trip</h4>
+                    <img src="asset/img/art/ink22-7d.jpeg"
+                         alt="Trip x 3 meaning drawing">
+                    <figcaption>7</figcaption>
+                        </figure>
+            </div>
+            </article>
+            
+          <article><h5>2021</h5> 
+                <figure><h4>Spirit</h4><img src="asset/img/art/inked6-21.png" alt="inktober prompt number 6 Spirit pen and ink drawing of a horse in a valley, a place I hope a spirt can be free."><figcaption>6</figcaption> </figure>
+            </article>
+            
+                        
+      <article>
+        <h5>2020</h5>
          <figure class="artwork"><h4>Progress</h4>
          <img src="https://i.redd.it/s590xfouais51.jpg"
               alt="progress"><figcaption>A visual representation of progress.</figcaption></figure>
-         
-                <figure><h4>Spirit</h4><img src="asset/img/art/inked6-21.png" alt="inktober prompt number 6 Spirit pen and ink drawing of a horse in a valley, a place I hope a spirt can be free."><figcaption>2021 Prompt #6</figcaption> </figure>
+        </article>
+            
+               <article><h6>More Ink Art</h6>
+             <p><a href="/inktober/index.html">Find out more about my <i>inktober</i> drawings by clicking here</a>
+             </p>
+         </article>   
         </div>
-         
+       
      </section>
      
   
@@ -105,7 +186,7 @@
          
        <section id="por">
            <header> <h2>Portraiture</h2>
-               <p><a href="portrait/index.html">Pets and people get drawn. Life is beautiful.</a></header>
+               <p><a href="portrait/index.html">Pets and people get drawn. <br>There is beauty in all life.</a></header>
           <figure class="artwork"> <h4>Catcat Playing</h4>
           <img src="https://i.redd.it/0njwmbzjihl91.jpg"
                alt="Pencil drawing of my cat">
